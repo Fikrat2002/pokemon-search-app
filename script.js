@@ -24,7 +24,7 @@ const searchPokedex = async () => {
   try {
     const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${userInput.value.toLowerCase()}`);
     const data = await res.json();
-    const { 
+    const {
       name,
       id,
       weight,
