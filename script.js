@@ -14,6 +14,7 @@ const defense = document.getElementById('defense');
 const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
+const errorMessage = document.getElementById('errorMessage');
 
 const searchPokedex = async () => {
   if (userInput.value === '') {
@@ -24,15 +25,15 @@ const searchPokedex = async () => {
     const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${userInput.value.toLowerCase()}`);
     const data = await res.json();
     const { 
-    name,
-    id,
-    weight,
-    height,
-    types,
-    stats,
-    sprites 
+      name,
+      id,
+      weight,
+      height,
+      types,
+      stats,
+      sprites,
     } = data;
-    
+
     pokemonImage.innerHTML = `<img src='${sprites.front_default}' id='sprite'>`;
     pokemonName.innerHTML = name.toUpperCase();
     pokemonId.innerHTML = `#${id}`;
