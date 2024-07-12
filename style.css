@@ -125,6 +125,10 @@ label {
   font-size: 1rem;
 }
 
+#error-message {
+  color: var(--white);
+}
+
 table {
   border-spacing: 15px;
   width: 100%;
