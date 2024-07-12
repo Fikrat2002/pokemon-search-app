@@ -11,7 +11,7 @@ The Pokémon Search App allows users to discover information about Pokémon by n
 )
 
 ## Deployment
-- 
+- https://fikrat2002.github.io/pokemon-search-app/
 
 ## Technologies Used 🛠
 
@@ -26,7 +26,7 @@ The technologies employed in this project include:
 To explore the project, follow these steps:
 
 1. Clone the repository to your local machine:
-bash git clone git@github.com:Fikrat2002/pokemon-search-app.git
+bash git clone: git@github.com:Fikrat2002/pokemon-search-app.git
 
 
 2. Navigate to the cloned directory:
