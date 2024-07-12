@@ -7,7 +7,7 @@ The Pokémon Search App allows users to discover information about Pokémon by n
 ## Demo 📸
 
 - Take a glimpse of the page below: 
-(#<img width="949" alt="Screenshot 2024-07-10 085438" src="https://github.com/Fikrat2002/cash-register/assets/168417613/2a6e58cf-0ee0-4d85-84f3-25efa06246e1">
+(#<img width="953" alt="Screenshot 2024-07-11 153444" src="https://github.com/Fikrat2002/pokemon-search-app/assets/168417613/0395dd37-b08e-4c8d-881a-924ffc1369db">
 )
 
 ## Deployment
