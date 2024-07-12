@@ -15,7 +15,6 @@ const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
 
-
 const searchPokedex = async () => {
   if (userInput.value === '') {
     return;
@@ -24,7 +23,9 @@ const searchPokedex = async () => {
   try {
     const res = await fetch(`https://pokeapi-proxy.freecodecamp.rocks/api/pokemon/${userInput.value.toLowerCase()}`);
     const data = await res.json();
-    const {name, id, weight, height, types, stats, sprites } = data;
+    const { 
+        name, id, weight, height, types, stats, sprites 
+    } = data;
     pokemonImage.innerHTML = `<img src='${sprites.front_default}' id='sprite'>`;
     pokemonName.innerHTML = name.toUpperCase();
     pokemonId.innerHTML = `#${id}`;
@@ -38,7 +39,7 @@ const searchPokedex = async () => {
     specialDefense.innerHTML = stats[4].base_stat;
     speed.innerHTML = stats[5].base_stat;
   } catch (err) {
-    showNotFoundStyle('Pokemon not found');
+    showErrorMessage('Pokemon not found');
   }
 };
 
