@@ -14,7 +14,7 @@ const defense = document.getElementById('defense');
 const specialAttack = document.getElementById('special-attack');
 const specialDefense = document.getElementById('special-defense');
 const speed = document.getElementById('speed');
-const errorMessage = document.getElementById('errorMessage');
+const errorMessage = document.getElementById('error-message');
 
 const searchPokedex = async () => {
   if (userInput.value === '') {
